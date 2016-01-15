@@ -1,0 +1,109 @@
+
+.timer {
+  direction: ltr;
+  text-align: center;
+  border-radius: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 170px;
+  background-color: #000;
+  color: black;
+  font-size: 12px;
+  line-height: 1.3;
+  font-family: Arial, sans-serif;
+  height: 6.2em; }
+  .timer * {
+    margin: 0;
+    padding: 0; }
+  .timer .digits {
+    padding: 1.33333em; }
+    .timer .digits .dots {
+      position: relative;
+      width: 0.33333em; }
+      .timer .digits .dots:before, .timer .digits .dots:after {
+        width: 0.33333em;
+        height: 0.33333em;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -2.4em;
+        background-color: red; }
+      .timer .digits .dots:after {
+        top: -1em; }
+    .timer .digits > div {
+      display: inline-block;
+      margin-left: 0.66667em; }
+      .timer .digits > div.one .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.one .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.two .c1 .d1, .timer .digits > div.two .c1 .d2, .timer .digits > div.two .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.two .c2 .d1, .timer .digits > div.two .c2 .d2, .timer .digits > div.two .c2 .d3 {
+        opacity: 1; }
+      .timer .digits > div.three .c1 .d1, .timer .digits > div.three .c1 .d2, .timer .digits > div.three .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.three .c2 .d1, .timer .digits > div.three .c2 .d2, .timer .digits > div.three .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.four .c1 .d2, .timer .digits > div.four .c1 .d3, .timer .digits > div.four .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.four .c2 .d1, .timer .digits > div.four .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.five .c1 .d1, .timer .digits > div.five .c1 .d2, .timer .digits > div.five .c1 .d3 {
+        opacity: 1; }
+      .timer .digits > div.five .c2 .d1, .timer .digits > div.five .c2 .d2, .timer .digits > div.five .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.six .c1 .d1, .timer .digits > div.six .c1 .d2, .timer .digits > div.six .c1 .d3 {
+        opacity: 1; }
+      .timer .digits > div.six .c2 .d1, .timer .digits > div.six .c2 .d2, .timer .digits > div.six .c2 .d3, .timer .digits > div.six .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.seven .c1 .d1, .timer .digits > div.seven .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.seven .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.eight .c1 .d1, .timer .digits > div.eight .c1 .d2, .timer .digits > div.eight .c1 .d3, .timer .digits > div.eight .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.eight .c2 .d1, .timer .digits > div.eight .c2 .d2, .timer .digits > div.eight .c2 .d3, .timer .digits > div.eight .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.nine .c1 .d1, .timer .digits > div.nine .c1 .d2, .timer .digits > div.nine .c1 .d3, .timer .digits > div.nine .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.nine .c2 .d1, .timer .digits > div.nine .c2 .d4 {
+        opacity: 1; }
+      .timer .digits > div.zero .c1 .d1, .timer .digits > div.zero .c1 .d3, .timer .digits > div.zero .c1 .d4 {
+        opacity: 1; }
+      .timer .digits > div.zero .c2 .d2, .timer .digits > div.zero .c2 .d3, .timer .digits > div.zero .c2 .d4 {
+        opacity: 1; }
+    .timer .digits .container {
+      position: relative;
+      width: 1.66667em;
+      height: 1.66667em; }
+      .timer .digits .container.c1 .d2 {
+        border-bottom-width: 0.16667em; }
+      .timer .digits .container.c2 {
+        top: 2px; }
+        .timer .digits .container.c2 .d1 {
+          border-top-width: 0.16667em;
+          top: -1px; }
+      .timer .digits .container .d1, .timer .digits .container .d2, .timer .digits .container .d3, .timer .digits .container .d4 {
+        position: absolute;
+        width: 1.66667em;
+        height: 1.66667em;
+        border: 0.33333em solid transparent; }
+      .timer .digits .container .d1, .timer .digits .container .d2, .timer .digits .container .d3, .timer .digits .container .d4, .timer .digits .container .d5, .timer .digits .container .d6, .timer .digits .container .d7 {
+        opacity: 0.12;
+        -webkit-transition: 0.25s;
+        -moz-transition: 0.25s;
+        -o-transition: 0.25s;
+        transition: 0.25s; }
+      .timer .digits .container .d1 {
+        border-top-color: red !important;
+        top: -2px; }
+      .timer .digits .container .d2 {
+        border-bottom-color: red !important;
+        bottom: -1px; }
+      .timer .digits .container .d3 {
+        border-left-color: red !important;
+        left: -2px; }
+      .timer .digits .container .d4 {
+        border-right-color: red !important;
+        right: -2px; }
